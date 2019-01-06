@@ -1,0 +1,8 @@
+defaults:
+  service:
+    name: null
+    about: "Auto Generated API."
+    version: "1.0.0"
+    docs: null
+    contacts: "ask@teamc.io"
+    copyright: "teamc.io © 2019"
