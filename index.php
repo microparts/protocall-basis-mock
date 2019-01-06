@@ -2,7 +2,6 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use App\ControllerServiceProvider;
 use Igni\Application\HttpApplication;
 use Igni\Network\Server\Configuration;
 use Igni\Network\Server\HttpServer;
@@ -13,6 +12,7 @@ use Microparts\Igni\Support\Modules\FlysystemModule;
 use Microparts\Igni\Support\Modules\HealthcheckModule;
 use Microparts\Igni\Support\Modules\LoggerModule;
 use Microparts\Igni\Support\Modules\ServiceInfoModule;
+use Microparts\Igni\Support\Modules\AutoRegisterControllersModule;
 
 // Setup server
 $conf = new Configuration(8080, '0.0.0.0');
@@ -37,7 +37,7 @@ $app->extend(LoggerModule::class);
 $app->extend(ConfigurationModule::class);
 $app->extend(ServiceInfoModule::class);
 $app->extend(FlysystemModule::class);
-$app->extend(ControllerServiceProvider::class);
+$app->extend(AutoRegisterControllersModule::class);
 
 // Run the server, it should listen on localhost:8080
 $app->run($server);

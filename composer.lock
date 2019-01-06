@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ee75e353628ea96cec4962f3877b7bb",
+    "content-hash": "f94e4bc2c5d7ac9105ff434d0752d41a",
     "packages": [
         {
             "name": "fzaninotto/faker",
@@ -538,12 +538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/microparts/igni-support-php.git",
-                "reference": "7848e79ffb2d7520b117a07f4b2bab92a1a0a539"
+                "reference": "a910dde2d2a5159e10b05b6c05bba811e8d7ef2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microparts/igni-support-php/zipball/7848e79ffb2d7520b117a07f4b2bab92a1a0a539",
-                "reference": "7848e79ffb2d7520b117a07f4b2bab92a1a0a539",
+                "url": "https://api.github.com/repos/microparts/igni-support-php/zipball/a910dde2d2a5159e10b05b6c05bba811e8d7ef2c",
+                "reference": "a910dde2d2a5159e10b05b6c05bba811e8d7ef2c",
                 "shasum": ""
             },
             "require": {
@@ -563,6 +563,7 @@
             },
             "suggest": {
                 "igniphp/framework": "For usage, this package in your application must install this framework.",
+                "league/flysystem": "If u want use league/flysystem with FlysystemModule.",
                 "league/flysystem-cached-adapter": "If u want use league/flysystem with FlysystemModule.",
                 "microparts/configuration-php": "For usage Configuration module in your application must install [microparts/configuration-php] package",
                 "rakit/validation": "This package is needs to install if u use validation in app.",
@@ -586,7 +587,7 @@
                 }
             ],
             "description": "Support for Igni PHP Framework.",
-            "time": "2019-01-06T20:25:59+00:00"
+            "time": "2019-01-06T21:59:38+00:00"
         },
         {
             "name": "monolog/monolog",
