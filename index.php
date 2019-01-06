@@ -25,12 +25,12 @@ $container = new Container();
 $app = new HttpApplication($container);
 $app->use(ErrorHandlerMiddleware::class);
 $app->use(new Tuupola\Middleware\CorsMiddleware([
-    "origin" => ["*"],
-    "methods" => ["HEAD", "GET", "OPTIONS", "POST", "PUT", "PATCH", "DELETE"],
-    "headers.allow" => ['Authorization', 'Content-Type', 'Accept-Encoding'],
-    "headers.expose" => ['*'],
-    "credentials" => false,
-    "cache" => 0,
+    'origin'         => ['*'],
+    'methods'        => ['HEAD', 'GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    'headers.allow'  => ['Authorization', 'Content-Type', 'Accept-Encoding'],
+    'headers.expose' => ['*'],
+    'credentials'    => false,
+    'cache'          => 0,
 ]));
 $app->extend(HealthcheckModule::class);
 $app->extend(LoggerModule::class);
