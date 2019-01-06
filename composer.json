@@ -6,7 +6,7 @@
     "ext-json": "*",
     "igniphp/framework": "^2.0",
     "microparts/configuration-php": "^2.0",
-    "microparts/igni-support-php": "dev-master",
+    "microparts/igni-support-php": "dev-master#8184e9309cd12c622287ecaa878731eca3edcd8a",
     "nesbot/carbon": "^2.5",
     "tuupola/cors-middleware": "^0.9.1",
     "league/flysystem": "^1.0",
