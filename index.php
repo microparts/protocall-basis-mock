@@ -2,16 +2,16 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use App\Provider\ControllerServiceProvider;
+use App\ControllerServiceProvider;
 use Igni\Application\HttpApplication;
 use Igni\Network\Server\Configuration;
 use Igni\Network\Server\HttpServer;
 use Illuminate\Container\Container;
 use Microparts\Igni\Support\Middleware\ErrorHandlerMiddleware;
 use Microparts\Igni\Support\Modules\ConfigurationModule;
+use Microparts\Igni\Support\Modules\FlysystemModule;
 use Microparts\Igni\Support\Modules\HealthcheckModule;
 use Microparts\Igni\Support\Modules\LoggerModule;
-use Microparts\Igni\Support\Modules\PostgresPdoModule;
 use Microparts\Igni\Support\Modules\ServiceInfoModule;
 
 // Setup server
@@ -36,7 +36,7 @@ $app->extend(HealthcheckModule::class);
 $app->extend(LoggerModule::class);
 $app->extend(ConfigurationModule::class);
 $app->extend(ServiceInfoModule::class);
-$app->extend(PostgresPdoModule::class);
+$app->extend(FlysystemModule::class);
 $app->extend(ControllerServiceProvider::class);
 
 // Run the server, it should listen on localhost:8080

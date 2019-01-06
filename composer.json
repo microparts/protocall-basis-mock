@@ -6,11 +6,12 @@
     "ext-json": "*",
     "igniphp/framework": "^2.0",
     "microparts/configuration-php": "^2.0",
-    "microparts/igni-support-php": "dev-master#8184e9309cd12c622287ecaa878731eca3edcd8a",
+    "microparts/igni-support-php": "dev-master#7848e79ffb2d7520b117a07f4b2bab92a1a0a539",
     "nesbot/carbon": "^2.5",
     "tuupola/cors-middleware": "^0.9.1",
     "league/flysystem": "^1.0",
-    "fzaninotto/faker": "^1.8"
+    "fzaninotto/faker": "^1.8",
+    "league/flysystem-cached-adapter": "^1.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",

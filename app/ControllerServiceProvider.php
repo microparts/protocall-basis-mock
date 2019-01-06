@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Provider;
+namespace App;
 
 use Microparts\Igni\Support\Providers\ControllerServiceProvider as BaseControllerServiceProvider;
 
