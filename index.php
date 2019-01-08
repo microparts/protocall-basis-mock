@@ -15,7 +15,7 @@ use Microparts\Igni\Support\Modules\ServiceInfoModule;
 use Microparts\Igni\Support\Modules\AutoRegisterControllersModule;
 
 // Setup server
-$conf = new Configuration($_ENV['PORT'] ?? 8080, '0.0.0.0');
+$conf = new Configuration(getenv('PORT') ?: 8084, '0.0.0.0');
 $conf->setWorkers(4);
 
 $server = new HttpServer($conf);
