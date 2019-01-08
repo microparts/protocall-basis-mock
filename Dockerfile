@@ -10,4 +10,4 @@ COPY --from=0 /app /app
 EXPOSE 8080
 WORKDIR /app
 
-CMD ["sh", "-c", "php index.php"]
+CMD php index.php
